@@ -1,0 +1,680 @@
+html,
+body {
+	font-family: 'bwmodel';
+	background-image: url(../public/image/background.png); 
+  background-size: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.Navbar {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoname {
+  font-family: 'bwmodel';
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  float: left;
+}
+
+.menu-button {
+  display:none;
+  background-color: #1481e7c2;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo:hover {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: rgba(47, 75, 201, 0.205);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+
+.x-nav-list-item{
+  font-family: initial;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 50px;
+  background-color: transparent;
+  border: none;
+  /* border-bottom-style: solid;
+  border-bottom-width: 3px; */
+}
+
+.small_head{
+	color:rgb(206,13,84);
+	font-size: 30px;
+	margin-top:100px;
+}
+
+.lottery_Name1{
+	font-size: 60px; font-weight: 900; color: white;     font-family: sans-serif; margin-bottom: 0
+}
+
+.lottery_Name2{
+	font-size: 60px; font-weight: 800; color: rgb(253,143,55);font-family: sans-serif;
+}
+
+.section1 {
+  margin-top:0px;
+}
+
+
+.view_img{
+  margin: auto;
+	width: 100%!important;
+  height: 400px!important;
+  
+  animation-name: my-animation;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.view-1img{
+	width: 100%!important;
+  height: 40px!important;
+}
+
+@keyframes my-animation {
+  from {
+    transition:translate(0px, -10px)
+  }
+  to {
+    transform: translate(0px, 20px);
+  }
+}
+
+
+.section2{
+	margin-top:60px;
+  margin-bottom: 100px;
+}
+.section2 .first {
+  display:block;
+}
+
+@media only screen and (max-width: 800px){
+
+  .section2 .first {
+    display:none!important;
+  }
+ .x-font2-white {
+   
+  color: rgb(255, 255, 255)!important;
+  font-size: 23px;
+  font-weight: bold;
+ }
+ .navitems {
+   display: none!important;
+ }
+
+ .logoname {
+    display: none!important;
+  }
+
+  .menu-button {
+    display:block!important;
+  }
+
+  .view_img {
+    height: 300px!important;
+  }
+}
+.texts{
+  font-size: 20px;
+}
+
+.MuiSlider-rail{
+  height: 15px !important;
+  border-radius: 10px!important;
+  color: rgb(84, 60, 223);
+}
+
+.MuiSlider-track {
+  height: 15px !important;
+  border-radius: 10px!important;
+  color:rgb(223, 37, 130);
+}
+
+.MuiSlider-trackFalse {
+  color: rgb(84, 60, 223);
+}
+
+.MuiSlider-thumb {
+  height: 10px !important;
+  display: none!important;
+}
+
+.ticketTime {
+  color:rgb(185, 127, 18)!important;
+  font-size: 26px!important;
+  font-weight: bold;
+}
+
+.x-font4-bold-yellow{
+  color: rgb(185, 127, 18)!important;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.x-font4-bold-white{
+  color: rgb(255, 255, 255)!important;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.x-font4-yellow{
+  color: rgb(185, 127, 18)!important;
+  font-size: 18px;
+}
+
+.x-font4-white{
+  color: rgb(255, 255, 255)!important;
+  font-size: 18px;
+}
+
+.x-font3-white {
+  color: white !important;
+  font-size: 22px;
+}
+
+.x-font3-yellow {
+  color: rgb(185, 127, 18)!important;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+
+.x-font3-red {
+  color: rgb(223, 37, 130);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.x-font2-yellow {
+  color: rgb(185, 127, 18)!important;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.x-font2-red {
+  color: rgb(223, 37, 130);
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.x-font2-white {
+  color: rgb(255, 255, 255)!important;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.x-font1-white {
+  color: rgb(255, 255, 255)!important;
+  font-size: 34px;
+  font-weight: bold;
+}
+.x-font1-yellow {
+  letter-spacing: 0.12em;
+  color: rgb(185, 127, 18)!important;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 800px){
+
+  .x-font4-bold-yellow{
+    color: rgb(185, 127, 18)!important;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .x-font4-bold-white{
+    color: rgb(255, 255, 255)!important;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .x-font3-white {
+    color: white !important;
+    font-size: 18px;
+  }
+  
+  .x-font3-yellow {
+    color: rgb(185, 127, 18)!important;
+    font-size: 18px;
+  }
+  
+  .x-font2-yellow {
+    color: rgb(185, 127, 18)!important;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .x-font2-red {
+    color: rgb(223, 37, 130);
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .x-font2-white {
+    color: rgb(255, 255, 255)!important;
+    font-size: 18px;
+    font-weight:600 ;
+  }
+  
+  .x-font1-white {
+    color: rgb(255, 255, 255)!important;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .x-font1-yellow {
+    letter-spacing: 0.1em;
+    color: rgb(185, 127, 18)!important;
+    font-size: 28px;
+    font-weight: bold;
+  }
+}
+
+
+.RoundPotCard {
+  width: 80%!important;
+  background-color:#0f1544!important;
+  border-radius: 10px;
+}
+
+.RoundPotCard .title {
+  padding:20px;
+  border-radius: 10px;
+  width:60%!important;
+  background-color:rgba(50, 41, 179, 0.966) !important;
+  transform: translate(20px, -40px) !important;
+}
+.RoundPotCard .body {
+  transform: translate(0px, -40px) !important;
+  padding:40px;
+}
+
+
+@media only screen and (max-width: 800px){
+
+  .RoundPotCard {
+    width: 100%!important;
+    background-color:#0f1544!important;
+    border-radius: 10px;
+  }
+  
+  .RoundPotCard .title {
+    padding:20px;
+    border-radius: 10px;
+    width:80%!important;
+    background-color:rgba(50, 41, 179, 0.966) !important;
+    transform: translate(20px, -40px) !important;
+  }
+  .RoundPotCard .body {
+    transform: translate(0px, -40px) !important;
+    padding:40px;
+  }
+  .ticketStyledButton {
+    padding: 6px!important;
+    font-size: 14px!important;
+  }
+}
+.item{
+  padding-top: 20px;
+}
+
+.main-card {
+  margin-bottom:60px!important;
+}
+
+.text-left {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.workflow-card .title {
+  text-align: center;
+  font-size:40px;
+  color:rgb(163, 27, 145);
+  font-weight: bold;
+}
+
+.unlock-wallet-card {
+  display: flex;
+  border-radius: 15px;
+  height: 200px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  background-size: cover;
+  background-image: url(../public/image/6.png);
+}
+.latest-winnumber-card{
+  text-align: center;
+}
+.latest-winnumber-card .title {
+  text-align: center;
+  font-size:32px;
+  color:rgb(163, 27, 145);
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+.ring-card {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width:15%;
+}
+.ring-card-img1{
+  display: inline-block;
+  position: relative;
+  width: 120%;
+}
+.ring-card span{
+  position: absolute;
+  font-size: 40px!important;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+
+@media only screen and (max-width: 800px){
+  .ring-card {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width:20%;
+  }
+  .ring-card img{
+    width: 120%;
+  }
+  .ring-card span{
+    font-size: 20px!important;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.space {
+  margin-top:150px;
+}
+
+.bigwin-card {
+  position: relative;
+  text-align: center;
+  justify:center;
+  padding:5%;
+  
+  animation-name: my-animation;
+  animation-duration: 0.7s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.bigwin-card-img{
+  position: relative;
+  width:650px;
+  height:400px;
+  margin:auto
+}
+.bigwin-card span{
+  position: absolute;
+  bottom:60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes my-animation {
+  from {
+    transition:translate(0px, -10px)
+  }
+  to {
+    transform: translate(0px, 20px);
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .bigwin-card-img{
+    width:250px;
+    height:200px;
+  }
+  
+  .bigwin-card span{
+    position: absolute;
+    font-size: 18px!important;
+    bottom:12px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+}
+
+.win-info-card {
+  text-align: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  padding: 40px;
+}
+
+.RoundInfoCard {
+  width: 100%!important;
+  background-color:#0f1544!important;
+  border-radius: 10px;
+  align-items: left;
+}
+
+.RoundInfoCard .title {
+  padding: 0px!important;
+  border-radius: 10px;
+  width:100%!important;
+  background-color:rgba(50, 41, 179, 0.966) !important;
+}
+
+.RoundInfoCard-header1 {
+  border-radius: 10px;
+  padding: 40px;
+  background-color:rgba(50, 41, 179, 0.966) !important;
+}
+.RoundInfoCard-header2 {
+  border-radius: 0px 10px 10px 0px;
+  padding: 40px;
+  background-color:rgba(175, 151, 16, 0.966) !important;
+}
+
+.RoundInfoCard .body {
+  padding:40px;
+}
+
+.k-listview {
+  background-color:#0f1544!important;
+  border-radius:10px!important;
+  padding:20px!important;
+}
+.k-pager-wrap {
+  background-color:#0f1544!important;
+  border-radius:10px!important;
+  padding:20px!important;
+}
+.MuiGrid-container{
+  padding:5px!important;
+}
+
+.space-line {
+  margin-top:5px;
+  margin-bottom:5px;
+  height:1px;
+  background-color:white;
+  border-radius:20px;
+}
+
+.round-input{
+  margin: 8px;
+  color: white !important;
+  width:80%;
+}
+.search-button{
+    background-color: rgb(206,13,84);
+    border:none;
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.2s;
+    height:100%;
+    width:20%;
+}
+.search-button:hover {
+    cursor: pointer;
+    background-color:rgb(253,153,45) ;
+    color:white;
+}
+
+@media only screen and (max-width: 800px){
+  .round-input{
+    margin: 8px;
+    color: white !important;
+    width:70%;
+  }
+  .search-button{
+    height:100%;
+    width:30%;
+    border-radius:5px;  
+}
+}
+.MuiInputBase-input {
+  font-size: 20px!important;
+  font-weight: bold;
+  border-radius:5px!important;
+  background-color:rgba(50, 41, 179, 0.2) !important;
+  color: white !important;
+  height: 100%;
+}
+
+.MuiFormLabel-root {
+  font-size: 20px!important;
+  color:rgb(62 67 218)!important;
+}
+
+.ReactModal__Overlay{
+  background-color: rgba(131, 132, 192, 0.1)!important;
+  text-align: center;
+  align-items: center;
+}
+.ReactModal__Content{
+  top: 50%!important;
+  left: 50%!important;
+  transform: translate(-50%, -50%);
+  width:550px!important;
+  height: 450px!important;
+  background-color:rgba(6, 13, 78, 0.952)!important;
+}
+
+.modal-card1{
+  width: 300px;
+  position: inherit;
+  top: 50%!important;
+  left: 50%!important;
+  transform: translate(-50%, -50%);
+}
+.lucky-title {
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.ticket-number {
+  text-align:center;
+}
+@media only screen and (max-width: 800px){
+  
+  .ReactModal__Content{
+    width:350px!important;
+    height: 300px!important;
+  }
+}
+
+.MuiOutlinedInput-notchedOutline {
+  top: -5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0 8px;
+  overflow: hidden;
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.claim-button {
+  background-color: rgb(206,13,84);
+  border:none;
+  color:white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  padding:10px;
+  width:200px;
+  height:50px;
+  margin-top:10px;
+  margin-bottom:10px;
+  transition: 0.2s;
+  text-align: center;
+  
+}
+
+.claim-button:hover {
+  cursor: pointer;
+  background-color:rgb(223,153,45) ;
+  color:white;
+  display:absolute;
+  right: 0;
+}
+
+.claim-button-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
