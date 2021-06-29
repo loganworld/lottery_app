@@ -43,10 +43,10 @@ const Footer = (props) => {
         <NabBar className = "footer">
             <span className = "logo"  onClick={(e)=>{router.push("/")}}>
                 <LogoImage src={logo} id="logo_image" alt = "logo"></LogoImage>
-                <span className = "logoname">ATARI </span>
+                <span className = "logoname">Glotto </span>
             </span>
             <FooterLink  onClick={(e)=>{router.push("/")}}>
-                ATARI.COM
+                Glotto.COM
             </FooterLink>
         </NabBar>
     )

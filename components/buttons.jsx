@@ -111,9 +111,13 @@ const TicketButton = ({children})=>{
             {
                 var tx=await coin.approve(Lottery.address,ethers.utils.parseUnits(ticketPrice.toString(),CoinDecimals))
                 .catch((err)=>{
-                    console.log(err)
+                    console.log(err);
+                    alert("OOPS, Approve error");
+                    closeModal();
                 });
                 if(tx==null) return;
+                
+                closeModal();
                 await tx.wait();
                 
                 console.log(tx.hash);
@@ -123,10 +127,13 @@ const TicketButton = ({children})=>{
                 var ticketNumbers=[number1,number2,number3,number4];
                 var tx =await Lottery.buy(ethers.utils.parseUnits(price.toString(),CoinDecimals),ticketNumbers)
                 .catch((err)=>{
-                    console.log(err)
+                    console.log(err);
+                    alert("OOPS!, Buy error");
                 });
-                if(tx!=null)
+                if(tx!=null){
                     await tx.wait()
+                    alert("Buy ticket success");
+                }
             }
             else {
                 var ticketNumbers=[];
@@ -135,11 +142,14 @@ const TicketButton = ({children})=>{
                 }
                 var tx =await Lottery.multiBuy(ethers.utils.parseUnits(price.toString(),CoinDecimals),ticketNumbers)
                 .catch((err)=>{
-                    console.log(err)
+                    console.log(err);
+                    alert("OOPS!, Buy tickets error");
                 });
                 
-                if(tx!=null)
+                if(tx!=null){
                     await tx.wait()
+                    alert("Buy ticket success");
+                }
             }
             console.log(ticketNumbers)
             
@@ -159,6 +169,7 @@ const TicketButton = ({children})=>{
                 ariaHideApp={false}
             >
                 <div className = "modal-card1">
+                    <div className = "x-font3-red" style = {{marginBottom: "5px"}}>price: {price} Glotto </div>
                     <TextField variant="outlined" label="ticket amount" className = "round-input" value={ticketAmount} onChange={handleAmount}/>
                     <div className = "lucky-title x-font3-yellow">Select Lucky numbers(1-20)</div>
                     <Grid container className = "ticket-number">

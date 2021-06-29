@@ -9,7 +9,7 @@ import {useState} from "react"
 import {Card} from "../components/card"
 import {RoundPotCard} from "../components/roundPotCard"
 import {WorkFlowCard} from "../components/workFlow"
-import {UnLockWalletCard} from "../components/unLockWallet"
+import {UnLockWalletCard} from "../components/unlockWallet"
 import {LatestWinNumbercard} from "../components/latestWinNumber"
 import {useRouter} from 'next/router';
 import {LotteryContract,TicketContract,CoinContract,CoinDecimals} from "../contract"
@@ -123,7 +123,7 @@ export default function Home() {
           <Grid container spacing = {1}>
             <Grid item xs = {12} sm = {12} md = {6} className = "section1">
               <div className="small_head">New Crypto Game</div>
-              <div className = "lottery_Name1">ATARI</div>
+              <div className = "lottery_Name1">Glotto</div>
               <div className = "lottery_Name2">LOTTERY</div>
               <TicketButton>BUY TICKET</TicketButton>
             </Grid>
@@ -150,7 +150,7 @@ export default function Home() {
                     <Image className="view-1img" src={"/image/1.png"}  id="" alt="" fill="" layout="fill"/>
                   </Grid>
                   <Grid item xs = {12} sm = {12} md = {9} className = "texts">
-                    <div style={{color:"rgb(206,13,84)", }}>Buy tickets with ATARI</div>
+                    <div style={{color:"rgb(206,13,84)", }}>Buy tickets with Glotto</div>
                     <div style={{color:"white", fontsynthesis: "15px"}}>Win if 2, 3, or 4 of your ticket numbers match!</div>
                   </Grid>
               </Grid>

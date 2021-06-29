@@ -5,7 +5,7 @@ import {Radio, Grid, Slider} from '@material-ui/core';
 import {TicketButton} from '../components/buttons'
 import {useState,useEffect} from "react"
 import {Card} from "../components/card"
-import {UnLockWalletCard} from "../components/unLockWallet"
+import {UnLockWalletCard} from "../components/unlockWallet"
 import {LatestWinNumbercard} from "../components/latestWinNumber"
 import {RoundInfoCard} from "../components/roundInfoCard"
 import {useRouter} from 'next/router';

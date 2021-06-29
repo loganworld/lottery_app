@@ -12,7 +12,7 @@ const UnLockWalletCard = ()=>{
     }
     return (
         <div className = "unlock-wallet-card">
-            <span className = "x-font2-white"> Buy tickets with ATARI</span>
+            <span className = "x-font2-white"> Buy tickets with Glotto</span>
             <TicketButton onClick= {handleConnect}>BUY TICKET</TicketButton>
         </div>
     )

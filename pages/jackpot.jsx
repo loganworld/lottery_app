@@ -8,7 +8,7 @@ import {TicketButton} from '../components/buttons'
 import {Card} from "../components/card"
 import {RountPotCard} from "../components/roundPotCard"
 import {WorkFlowCard} from "../components/workFlow"
-import {UnLockWalletCard} from "../components/unLockWallet"
+import {UnLockWalletCard} from "../components/unlockWallet"
 import {LatestWinNumbercard} from "../components/latestWinNumber"
 import {useRouter} from 'next/router';
 import {TicketInfoCard} from '../components/ticketInfoCard';

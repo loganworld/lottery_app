@@ -98,7 +98,7 @@ const Header = (props) => {
             <Grid item xs = {6} sm = {6} md={3}>
                 <span className = "logo" >
                     <LogoImage src={logo} id="logo_image" alt = "logo"  onClick={(e)=>{router.push("/")}}></LogoImage>
-                    <span className = "logoname"  onClick={(e)=>{router.push("/")}}>ATARI </span>
+                    <span className = "logoname"  onClick={(e)=>{router.push("/")}}>Glotto </span>
                     
                     <Button 
                         aria-controls="simple-menu" 

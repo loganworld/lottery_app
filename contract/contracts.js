@@ -238,7 +238,7 @@ const lotteryContract ={
 		},
 		{
 			"inputs": [],
-			"name": "atari",
+			"name": "Glotto",
 			"outputs": [
 				{
 					"internalType": "contract IERC20",
@@ -516,7 +516,7 @@ const lotteryContract ={
 			"inputs": [
 				{
 					"internalType": "contract IERC20",
-					"name": "_atari",
+					"name": "_Glotto",
 					"type": "address"
 				},
 				{

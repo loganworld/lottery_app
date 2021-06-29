@@ -34,7 +34,7 @@ const RoundPotCard =()=>{
             </Grid>
             <Grid item xs = {8} sm = {8} md = {8} className = "texts">
               <div className = "x-font3-white">Total Pot:</div>
-              <div className = "x-font2-yellow">{Number(totalpot).toFixed(2)} ATRI</div>
+              <div className = "x-font2-yellow">{Number(totalpot).toFixed(2)} Glotto</div>
             </Grid>
           </Grid>
         </div>

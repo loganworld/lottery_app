@@ -127,10 +127,16 @@ const TicketInfoCard =(props)=>{
     const provider = new ethers.providers.Web3Provider(wallet.ethereum);
     var signer = provider.getSigner();
     var Lottery = LotteryContract.connect(signer);
-    var tx =await Lottery.multiClaim(claimTickets);
-    console.log(await tx.wait());
-    window.location.reload();
-  }
+    var tx =await Lottery.multiClaim(claimTickets)
+    .catch((err)=>{
+      alert("OOPS!, Claim failed");
+    });
+    if(tx!=null){
+      console.log(await tx.wait());
+      alert("Congratulation! you reward claim success!");
+      window.location.reload();
+    }
+     }
 
 
   useEffect(()=>{
